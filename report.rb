@@ -35,7 +35,7 @@ def calcScore(fcp,fmp,fci,interactive,speedindex)
   score_i = QUANTILE_AT_VALUE(7300.0,2900.0,interactive)
   score_si = QUANTILE_AT_VALUE(5800.0,2900.0,speedindex)
   
-  return ((score_fcp * 3 + score_fmp * 1 + score_fci * 2 + score_i * 5 + score_si * 4)/15 ) * 100
+  return (((score_fcp * 3 + score_fmp * 1 + score_fci * 2 + score_i * 5 + score_si * 4)/15 ) * 100).floor
 end
 
 hash = {}
